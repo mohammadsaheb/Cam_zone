@@ -1,0 +1,70 @@
+/* Booking Calendar Styles */
+.date-cell {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 2px auto;
+    transition: all 0.2s;
+}
+
+.date-cell:hover:not(.disabled) {
+    background-color: #e6f2ff;
+}
+
+.date-cell.disabled {
+    color: #ccc;
+    cursor: default;
+    background-color: transparent;
+}
+
+.date-cell.selected {
+    background-color: #3498db;
+    color: white;
+}
+
+.date-cell.today {
+    border: 2px solid #e74c3c;
+}
+
+.time-slot {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.time-slot:hover:not(.disabled) {
+    background-color: #e6f2ff;
+}
+
+.time-slot.selected {
+    background-color: #3498db;
+    color: white;
+}
+
+.time-slot.disabled {
+    color: #ccc;
+    cursor: default;
+    background-color: #f9f9f9;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+.calendar-month {
+    font-size: 18px;
+    font-weight: bold;
+}
